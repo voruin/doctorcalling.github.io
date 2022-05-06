@@ -168,7 +168,7 @@ function sendMqttMessage(patientColor) {
         // start an MQTT message:
         messageR = new Paho.MQTT.Message(msgR);
         // choose the destination topic:
-        messageR.destinationName = "doctorCallingR";
+        messageR.destinationName = "doctorCallingH";
         // send it:
         client.send(messageR);
         // print what you sent:
@@ -177,7 +177,7 @@ function sendMqttMessage(patientColor) {
           // start an MQTT message:
           messageG = new Paho.MQTT.Message(msgG);
           // choose the destination topic:
-          messageG.destinationName = "doctorCallingG";
+          messageG.destinationName = "doctorCallingS";
           // send it:
           client.send(messageG);
           // print what you sent:
@@ -186,7 +186,7 @@ function sendMqttMessage(patientColor) {
             // start an MQTT message:
         messageB = new Paho.MQTT.Message(msgB);
         // choose the destination topic:
-        messageB.destinationName = "doctorCallingB";
+        messageB.destinationName = "doctorCallingV";
         // send it:
         client.send(messageB);
         // print what you sent:
